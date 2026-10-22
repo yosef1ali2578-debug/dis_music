@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Discord YouTube Music Sync & Controller",
+  "version": "2.0",
+  "description": "مزامنة يوتيوب ميوزيك مع بوت الديسكورد مع دعم التقديم والتأخير والبلاي ليست",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://music.youtube.com/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
