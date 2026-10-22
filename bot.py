@@ -426,4 +426,4 @@ async def handle_sync(request: web.Request):
     data = await request.json()
     action = data.get("action")
     video_id = data.get("videoId")
-    position = int()
+    position = int(float(data.get("position", 0)))
