@@ -7,7 +7,7 @@ import yt_dlp
 import time
 
 # إعدادات البوت
-TOKEN = os.environ.get("DISCORD_TOKEN", "MTU2MjY0NDI1ODU4NDc5MzE1OA.GlDIST.T8s0_YqlbHCJBhIZjdka97p5Pbw-pS0HJM5ErQ")
+TOKEN = os.environ.get("DISCORD_TOKEN")
 GUILD_ID = None
 PORT = int(os.environ.get("PORT", 8080))
 
